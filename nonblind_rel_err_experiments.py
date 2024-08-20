@@ -40,12 +40,7 @@ input_path2 = "src/cameraman.tif"
 output_path2 = "src/cameraman_resized.png"
 
 # SET SIZE OF IMAGE HERE
-# nx = 16384
-# nx = int(2**13) ####################
-# nx = 512 ###
-# nx = 1024
 nx = 512
-# nx = int(2**11) ####################
 new_size = (nx, nx)  # New size of the image (width, height)
 
 resize_image(input_path1, output_path1, new_size)
@@ -53,7 +48,7 @@ resize_image(input_path2, output_path2, new_size)
 
 im1 = np.array(Image.open('src/baboon_resized.png').convert("L"))
 im2 = np.array(Image.open('src/cameraman_resized.png').convert("L"))
-# im = im.resize((64,64))
+
 r_true = torch.DoubleTensor(im1)
 r_true = r_true/torch.max(r_true)
 phi_true = torch.DoubleTensor(im2)

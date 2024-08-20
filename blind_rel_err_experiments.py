@@ -43,12 +43,7 @@ input_path2 = "src/cameraman.tif"
 output_path2 = "src/cameraman_resized.png"
 
 # SET SIZE OF IMAGE HERE
-# nx = 16384
-# nx = int(2**13) ####################
-# nx = 512 ###
-# nx = 1024
 nx = 512
-# nx = int(2**11) ####################
 new_size = (nx, nx)  # New size of the image (width, height)
 
 resize_image(input_path1, output_path1, new_size)
