@@ -1,5 +1,5 @@
 # Ptychography With PFT
- Application of the Partial Fourier Transform (PFT) for the ptychography problem
+Application of the Partial Fourier Transform (PFT) for the ptychography problem
 
 ## Associated Publications
 
@@ -27,6 +27,10 @@ Install all the requirments (designed for python 3.12.7)
 pip install -r requirements.txt
 ```
 
+## PFT Demonstration
+For a detailed demonstration of the Fast Partial Fourier Transform, refer to [PFT_demo.ipynb](PFT_demo.ipynb).
+Technical and theoretical explanations can be found in https://arxiv.org/abs/2008.12559.
+
 ## Experiments
 
 ### Non-Blind Ptychography
@@ -51,3 +55,9 @@ ePIE Relative Errors Experiment
 python blind_rel_err_experiments.py
 ```
 
+## Acknowledgements
+Samy Wu Fung was partially funded by National Science Foundation award DMS-2110745. Stanley Osher was partially funded by Air Force Office of Scientific Research (AFOSR) MURI
+FA9550-18-502, Office of Naval Research (ONR)
+N00014-20-1-2787, and STROBE: a National Science Foundation Science and Technology Center under Grant No. DMR-1548924. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funding agencies.
+
+We thank Yong-chan Park for his help on setting up the PyTorch-based PFT code.
