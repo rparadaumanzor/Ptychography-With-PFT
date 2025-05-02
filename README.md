@@ -5,6 +5,9 @@ FFT (512 x 512)            |  PFT (128 x 128)
 :-------------------------:|:-------------------------:
 ![](./src/full_fft.jpg) | ![](./src/pft.jpg)
 
+In addition to ptychography experiments utilizing the PFT, this repository provides a PyTorch implementation 
+of the PFT found in https://github.com/snudatalab/PFT originally implemented in C++.
+
 ## Associated Publications
 
 ### Fast Partial Fourier Transforms for Large-Scale Ptychography
