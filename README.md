@@ -1,5 +1,9 @@
 # Ptychography With PFT
-Application of the Partial Fourier Transform (PFT) for the ptychography problem
+Application of the Partial Fourier Transform (PFT) for the ptychography problem.
+
+FFT (512 x 512)            |  PFT (128 x 128)
+:-------------------------:|:-------------------------:
+![](./src/full_fft.jpg) | ![](./src/pft.jpg)
 
 ## Associated Publications
 
